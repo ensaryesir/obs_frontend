@@ -109,20 +109,55 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Static Navigation</h1>
+                        <h1 class="mt-4">General Information</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Static Navigation</li>
+                            <li class="breadcrumb-item"><a href="index.html">SIS AMASYA</a></li>
+                            <li class="breadcrumb-item active">General Information</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-                                <p class="mb-0">
-                                    This page is an example of using static navigation. By removing the
-                                    <code>.sb-nav-fixed</code>
-                                    class from the
-                                    <code>body</code>
-                                    , the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.
-                                </p>
+                                <div class="p-4"><div class="panel panel-default"><div class="panel-heading"><span id="lblMenuAd" style="color:#3A3A3A; font-size:16pt;"><i class="fas fa-user"></i>Genel Bilgiler</span></div>  
+<table id="tblGenel" style="width: 100%">
+	<tbody class="form-control"><tr>
+		<td><span id="lblProgramSure" style="color:#3A3A3A; font-size:16pt;">Program Normal/Azami Süre</span></td>
+		<td><input name="txtInfoNormalSure" type="text" value="4 / 7" readonly="readonly" id="txtInfoNormalSure" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblCAPkaydi" style="color:#3A3A3A; font-size:16pt;">ÇAP Kaydı</span></td>
+		<td><input name="txtInfoCAP" type="text" value="Yok" readonly="readonly" id="txtInfoCAP" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;"></td>
+	</tr>
+	<tr>
+		<td><span id="lblOgrenciSinif" style="color:#3A3A3A; font-size:16pt;">Kayıt Tarihi/Öğrenci Sınıf</span></td>
+		<td><input name="txtOgrenciSinif" type="text" value="29.08.2020 / 3" readonly="readonly" id="txtOgrenciSinif" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblYandalKaydi" style="color:#3A3A3A; font-size:16pt;">Yan Dal Kaydı</span></td>
+		<td><input name="txtInfoYANDAL" type="text" value="Yok" readonly="readonly" id="txtInfoYANDAL" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;"></td>
+	</tr>
+	<tr>
+		<td><span id="lblOkuduguYil" style="color:#3A3A3A; font-size:16pt;">Okuduğu Yıl</span></td>
+		<td><input name="txtInfoOkuduguYil" type="text" value="3" readonly="readonly" id="txtInfoOkuduguYil" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblCezaDurumu" style="color:#3A3A3A; font-size:16pt;">Ceza Durumu</span></td>
+		<td><input name="txtInfoCeza" type="text" value="0" readonly="readonly" id="txtInfoCeza" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+	</tr>
+	<tr>
+		<td><span id="lbYeniKanunaGore" style="color:#3A3A3A; font-size:16pt;">Yeni Kanuna Göre</span></td>
+		<td><input name="txtInfoYeniKanun" type="text" value="3" readonly="readonly" id="txtInfoYeniKanun" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td>
+<span id="lblKayitDondurma" style="color:#3A3A3A; font-size:16pt;">Kayıt Dondurma</span></td>
+		<td><input name="txtInfoDondurma" type="text" value="0" readonly="readonly" id="txtInfoDondurma" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+	</tr>
+	<tr>
+		<td><span id="lblDersKayitSayisi" title="Aktif Dönemde Ders Kayıt Sayısı" style="color:#3A3A3A; font-size:16pt;">Ak.Dön. Ders Kayıt Sayısı</span></td>
+		<td><input name="txtInfoDersKayit" type="text" value="8" readonly="readonly" id="txtInfoDersKayit" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblKatkiOgrenimUcreti" style="color:#3A3A3A; font-size:16pt;">Katkı/Öğrenim Ücreti</span></td>
+		<td><input name="txtInfoHarc" type="text" value="0" readonly="readonly" id="txtInfoHarc" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+	</tr>
+	<tr>
+		<td><span id="lblTezSeminerSay" style="color:#3A3A3A; font-size:16pt;">Tez/Seminer Sayısı</span></td>
+		<td><input name="txtInfoFaaliyet" type="text" value="0/0" readonly="readonly" id="txtInfoFaaliyet" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblDegisimProgrami" title="Erasmus/Farabi/YG/DG Bilgileri kayıt sayısı" style="color:#3A3A3A; font-size:16pt;">Değişim Prog./Yatay/DGS K.S.</span></td>
+		<td><input name="txtInfoErasmus" type="text" value="0" readonly="readonly" id="txtInfoErasmus" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+	</tr>
+</tbody></table>
+
+</div></div>
                             </div>
                         </div>
                         <div style="height: 100vh"></div>
