@@ -13,7 +13,7 @@
     <body>
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand ps-3" href="index.html">SIS Amasya</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -41,26 +41,52 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div class="sb-sidenav-menu-heading">Student Information System</div>
                             <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Exam Results
                             </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                General Operations
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+                            
+                            
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                    <a class="nav-link" href="personal_information.html">Personal Information</a>
+                                    <a class="nav-link" href="layout-static.html">General Information </a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Academic calendar</a>
+                                    <a class="nav-link" href="#">Consultant Information</a>
+                                    <a class="nav-link" href="#">Lessons Taken</a>
+                                    <a class="nav-link" href="#">Program Courses</a>
+                                    <a class="nav-link" href="#">Exam Schedule</a>
+                                    <a class="nav-link" href="#">Syllabus</a>
+                                    <a class="nav-link" href="#">Internship Information</a>
+                                    <a class="nav-link" href="#">General Announcements</a>
                                 </nav>
                             </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCourse" aria-expanded="false" aria-controls="collapseCourse">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Course and Term Procedures
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            
+                            <div class="collapse" id="collapseCourse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Course Registration</a>
+                                    <a class="nav-link" href="#">Drop and Add Courses</a>
+                                    <a class="nav-link" href="#">Term Dates and Deadlines</a>
+                                    <a class="nav-link" href="#">Transcript</a>
+                                    <a class="nav-link" href="#">Course Repeat Procedures</a>
+                                    <a class="nav-link" href="#">Absence Status</a>
+                                </nav>
+                            </div>
+                            
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
+                                User operations
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
@@ -89,6 +115,20 @@
                                     </div>
                                 </nav>
                             </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAddons" aria-expanded="false" aria-controls="collapseAddons">
+                                <div class="sb-nav-link-icon"><i class="fas fa-puzzle-piece"></i></div>
+                                Addons
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            
+                            
+                            <div class="collapse" id="collapseAddons" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Surveys</a>
+                                    <a class="nav-link" href="#">YÖKSİS Transactions </a>
+                                    <a class="nav-link" href="#">Student Information Form</a>
+                                </nav>
+                            </div>
                             <div class="sb-sidenav-menu-heading">Addons</div>
                             <a class="nav-link" href="charts.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
@@ -105,7 +145,7 @@
                         Start Bootstrap
                     </div>
                 </nav>
-            </div>
+            </div><div id="layoutSidenav_content">
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
@@ -116,44 +156,44 @@
                         </ol>
                         <div class="card mb-4">
                             <div class="card-body">
-                                <div class="p-4"><div class="panel panel-default"><div class="panel-heading"><span id="lblMenuAd" style="color:#3A3A3A; font-size:16pt;"><i class="fas fa-user"></i>Genel Bilgiler</span></div>  
+                                <div class="p-4"><div class="panel panel-default"><div class="panel-heading"><span id="lblMenuAd" style="color:#3A3A3A; font-size:14pt;"><i class="fas fa-user"></i>General Information</span></div>  
 <table id="tblGenel" style="width: 100%">
 	<tbody class="form-control"><tr>
-		<td><span id="lblProgramSure" style="color:#3A3A3A; font-size:16pt;">Program Normal/Azami Süre</span></td>
-		<td><input name="txtInfoNormalSure" type="text" value="4 / 7" readonly="readonly" id="txtInfoNormalSure" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
-		<td><span id="lblCAPkaydi" style="color:#3A3A3A; font-size:16pt;">ÇAP Kaydı</span></td>
-		<td><input name="txtInfoCAP" type="text" value="Yok" readonly="readonly" id="txtInfoCAP" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;"></td>
+		<td><span id="lblProgramSure" style="color:#3A3A3A; font-size:14pt;">First Name</span></td>
+		<td><input name="txtInfoNormalSure" type="text" value="İbrahim" readonly="readonly" id="txtInfoNormalSure" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
+		<td><span id="lblCAPkaydi" style="color:#3A3A3A; font-size:14pt;">Student No</span></td>
+		<td><input name="txtInfoCAP" type="text" value="201902027" readonly="readonly" id="txtInfoCAP" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;"></td>
 	</tr>
 	<tr>
-		<td><span id="lblOgrenciSinif" style="color:#3A3A3A; font-size:16pt;">Kayıt Tarihi/Öğrenci Sınıf</span></td>
-		<td><input name="txtOgrenciSinif" type="text" value="29.08.2020 / 3" readonly="readonly" id="txtOgrenciSinif" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
-		<td><span id="lblYandalKaydi" style="color:#3A3A3A; font-size:16pt;">Yan Dal Kaydı</span></td>
-		<td><input name="txtInfoYANDAL" type="text" value="Yok" readonly="readonly" id="txtInfoYANDAL" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;"></td>
+		<td><span id="lblOgrenciSinif" style="color:#3A3A3A; font-size:14pt;">Surname</span></td>
+		<td><input name="txtOgrenciSinif" type="text" value="Sezer" readonly="readonly" id="txtOgrenciSinif" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
+		<td><span id="lblYandalKaydi" style="color:#3A3A3A; font-size:14pt;">Email</span></td>
+		<td><input name="txtInfoYANDAL" type="text" value="ibrahimsezer--@hotmail.com" readonly="readonly" id="txtInfoYANDAL" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;"></td>
 	</tr>
 	<tr>
-		<td><span id="lblOkuduguYil" style="color:#3A3A3A; font-size:16pt;">Okuduğu Yıl</span></td>
-		<td><input name="txtInfoOkuduguYil" type="text" value="3" readonly="readonly" id="txtInfoOkuduguYil" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
-		<td><span id="lblCezaDurumu" style="color:#3A3A3A; font-size:16pt;">Ceza Durumu</span></td>
-		<td><input name="txtInfoCeza" type="text" value="0" readonly="readonly" id="txtInfoCeza" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblOkuduguYil" style="color:#3A3A3A; font-size:14pt;">Phone Number</span></td>
+		<td><input name="txtInfoOkuduguYil" type="text" value="55500550505" readonly="readonly" id="txtInfoOkuduguYil" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
+		<td><span id="lblCezaDurumu" style="color:#3A3A3A; font-size:14pt;">Birth Date</span></td>
+		<td><input name="txtInfoCeza" type="text" value="08.06.2001" readonly="readonly" id="txtInfoCeza" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
 	</tr>
 	<tr>
-		<td><span id="lbYeniKanunaGore" style="color:#3A3A3A; font-size:16pt;">Yeni Kanuna Göre</span></td>
-		<td><input name="txtInfoYeniKanun" type="text" value="3" readonly="readonly" id="txtInfoYeniKanun" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lbYeniKanunaGore" style="color:#3A3A3A; font-size:14pt;">Gender</span></td>
+		<td><input name="txtInfoYeniKanun" type="text" value="Male" readonly="readonly" id="txtInfoYeniKanun" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
 		<td>
-<span id="lblKayitDondurma" style="color:#3A3A3A; font-size:16pt;">Kayıt Dondurma</span></td>
-		<td><input name="txtInfoDondurma" type="text" value="0" readonly="readonly" id="txtInfoDondurma" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+<span id="lblKayitDondurma" style="color:#3A3A3A; font-size:14pt;">Department</span></td>
+		<td><input name="txtInfoDondurma" type="text" value="Technology Department" readonly="readonly" id="txtInfoDondurma" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
 	</tr>
 	<tr>
-		<td><span id="lblDersKayitSayisi" title="Aktif Dönemde Ders Kayıt Sayısı" style="color:#3A3A3A; font-size:16pt;">Ak.Dön. Ders Kayıt Sayısı</span></td>
-		<td><input name="txtInfoDersKayit" type="text" value="8" readonly="readonly" id="txtInfoDersKayit" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
-		<td><span id="lblKatkiOgrenimUcreti" style="color:#3A3A3A; font-size:16pt;">Katkı/Öğrenim Ücreti</span></td>
-		<td><input name="txtInfoHarc" type="text" value="0" readonly="readonly" id="txtInfoHarc" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblDersKayitSayisi" title="Aktif Dönemde Ders Kayıt Sayısı" style="color:#3A3A3A; font-size:14pt;">Graduated</span></td>
+		<td><input name="txtInfoDersKayit" type="text" value="not Graduated" readonly="readonly" id="txtInfoDersKayit" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
+		<td><span id="lblKatkiOgrenimUcreti" style="color:#3A3A3A; font-size:14pt;">GPA</span></td>
+		<td><input name="txtInfoHarc" type="text" value="3.17" readonly="readonly" id="txtInfoHarc" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
 	</tr>
 	<tr>
-		<td><span id="lblTezSeminerSay" style="color:#3A3A3A; font-size:16pt;">Tez/Seminer Sayısı</span></td>
-		<td><input name="txtInfoFaaliyet" type="text" value="0/0" readonly="readonly" id="txtInfoFaaliyet" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
-		<td><span id="lblDegisimProgrami" title="Erasmus/Farabi/YG/DG Bilgileri kayıt sayısı" style="color:#3A3A3A; font-size:16pt;">Değişim Prog./Yatay/DGS K.S.</span></td>
-		<td><input name="txtInfoErasmus" type="text" value="0" readonly="readonly" id="txtInfoErasmus" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:16pt;font-weight:normal;width:85%;text-align:right;"></td>
+		<td><span id="lblTezSeminerSay" style="color:#3A3A3A; font-size:14pt;">Registration Date</span></td>
+		<td><input name="txtInfoFaaliyet" type="text" value="07.2020" readonly="readonly" id="txtInfoFaaliyet" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
+		<td><span id="lblDegisimProgrami" title="Erasmus/Farabi/YG/DG Bilgileri kayıt sayısı" style="color:#3A3A3A; font-size:14pt;">Address</span></td>
+		<td><input name="txtInfoErasmus" type="text" value="Bursa/Yıldırım" readonly="readonly" id="txtInfoErasmus" class="form-control" autocomplete="off" style="background-color:#F3F3F3; font-size:14pt;font-weight:normal;width:100%;text-align:right;"></td>
 	</tr>
 </tbody></table>
 
